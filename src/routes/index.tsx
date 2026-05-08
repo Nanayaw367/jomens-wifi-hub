@@ -25,9 +25,6 @@ function Index() {
       <main>
         <Hero />
         <Locations />
-        <Pricing />
-        <Voucher />
-        <Portal />
         <HowItWorks />
         <Testimonials />
         <Faq />
