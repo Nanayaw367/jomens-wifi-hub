@@ -1,26 +1,43 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader, MobileBottomNav } from "@/components/site/SiteHeader";
+import { Hero } from "@/components/site/Hero";
+import { Locations } from "@/components/site/Locations";
+import { Pricing } from "@/components/site/Pricing";
+import { Voucher } from "@/components/site/Voucher";
+import { Portal } from "@/components/site/Portal";
+import { HowItWorks, Testimonials, Faq, Contact } from "@/components/site/Sections";
+import { SiteFooter } from "@/components/site/SiteFooter";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "JOMENS WIFI — Fast & Affordable Hotspot Internet in Ghana" },
+      { name: "description", content: "Connect to JOMENS WIFI hotspots across Ghana. Buy a voucher with Mobile Money and stay online — fast, affordable, reliable." },
+      { property: "og:title", content: "JOMENS WIFI — Fast & Affordable Hotspot Internet" },
+      { property: "og:description", content: "Reliable community WiFi across Ghana. Pay with MoMo, connect instantly." },
+      { property: "og:type", content: "website" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Locations />
+        <Pricing />
+        <Voucher />
+        <Portal />
+        <HowItWorks />
+        <Testimonials />
+        <Faq />
+        <Contact />
+      </main>
+      <SiteFooter />
+      <MobileBottomNav />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
