@@ -2,9 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader, MobileBottomNav } from "@/components/site/SiteHeader";
 import { Hero } from "@/components/site/Hero";
 import { Locations } from "@/components/site/Locations";
-import { Pricing } from "@/components/site/Pricing";
-import { Voucher } from "@/components/site/Voucher";
-import { Portal } from "@/components/site/Portal";
 import { HowItWorks, Testimonials, Faq, Contact } from "@/components/site/Sections";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
