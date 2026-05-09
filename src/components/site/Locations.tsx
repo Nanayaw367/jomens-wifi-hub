@@ -1,4 +1,4 @@
-import { MapPin, Signal, Wifi, ArrowRight, Map } from "lucide-react";
+import { MapPin, Signal, Wifi, Map } from "lucide-react";
 
 const locations = [
   { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5 },
