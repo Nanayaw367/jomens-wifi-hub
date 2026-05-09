@@ -31,8 +31,8 @@ export function SiteHeader() {
                 {l.label}
               </a>
             ))}
-            <a href="#voucher" className="rounded-xl bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-              Buy Voucher
+            <a href="#locations" className="rounded-xl bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+              View Locations
             </a>
           </nav>
 
