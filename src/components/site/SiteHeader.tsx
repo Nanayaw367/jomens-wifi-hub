@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Wifi, MapPin, Ticket, LayoutGrid, Menu } from "lucide-react";
+import { Wifi, MapPin, HelpCircle, Phone, Menu } from "lucide-react";
 import { useState } from "react";
 
 const links = [
   { href: "#locations", label: "Locations" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#voucher", label: "Voucher" },
+  { href: "#how", label: "How it works" },
   { href: "#faq", label: "FAQ" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -31,8 +31,8 @@ export function SiteHeader() {
                 {l.label}
               </a>
             ))}
-            <a href="#voucher" className="rounded-xl bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-              Buy Voucher
+            <a href="#locations" className="rounded-xl bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+              View Locations
             </a>
           </nav>
 
@@ -57,8 +57,8 @@ export function SiteHeader() {
 const bottomNav = [
   { href: "#hero", label: "Home", Icon: Wifi },
   { href: "#locations", label: "Spots", Icon: MapPin },
-  { href: "#voucher", label: "Buy", Icon: Ticket },
-  { href: "#portal", label: "Portal", Icon: LayoutGrid },
+  { href: "#faq", label: "FAQ", Icon: HelpCircle },
+  { href: "#contact", label: "Contact", Icon: Phone },
 ];
 
 export function MobileBottomNav() {
