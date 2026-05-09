@@ -1,12 +1,11 @@
 import { MapPin, Signal, Wifi, Map } from "lucide-react";
 
+const HOTSPOT_URL = "https://kostechcampuswifi.sopraent.com/hotspot";
+
 const locations = [
-  { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5 },
-  { name: "Asuogya Junction", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4 },
-  { name: "Market Circle", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4 },
-  { name: "Hostel Zone", desc: "Premium speeds in residential blocks", slug: "hostel", status: "online", strength: 5 },
-  { name: "Community Center", desc: "Free signup spots & community access", slug: "community", status: "offline", strength: 2 },
-  { name: "Town Plaza", desc: "Cafes, shops and outdoor seating coverage", slug: "plaza", status: "online", strength: 3 },
+  { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5, url: HOTSPOT_URL },
+  { name: "Asuogya Junction", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4, url: HOTSPOT_URL },
+  { name: "Market Circle", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4, url: HOTSPOT_URL },
 ];
 
 function Bars({ n }: { n: number }) {
@@ -79,12 +78,17 @@ export function Locations() {
                   </div>
                 </div>
 
-                <div className="mt-4 flex items-center justify-between">
-                  <code className="text-[11px] text-muted-foreground truncate">{loc.name}</code>
-                  <span className="text-[11px] text-muted-foreground inline-flex items-center gap-1">
+                <a
+                  href={loc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center justify-between rounded-lg bg-secondary/40 border border-glass-border px-3 py-2 hover:bg-secondary/60 transition-colors"
+                >
+                  <code className="text-[11px] text-muted-foreground truncate">{loc.url}</code>
+                  <span className="text-[11px] text-accent inline-flex items-center gap-1 shrink-0 ml-2">
                     <MapPin className="h-3.5 w-3.5" /> Hotspot
                   </span>
-                </div>
+                </a>
               </div>
             );
           })}
