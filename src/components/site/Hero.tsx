@@ -1,5 +1,5 @@
 import { MapPin, Activity, Users, Signal } from "lucide-react";
-import { WifiPulse } from "./WifiPulse";
+
 
 const stats = [
   { Icon: Users, value: "12,400+", label: "Active users" },
