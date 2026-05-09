@@ -36,7 +36,13 @@ export function Locations() {
           {locations.map((loc) => {
             const online = loc.status === "online";
             return (
-              <div key={loc.slug} className="group glass neon-border rounded-2xl p-5 transition-transform hover:-translate-y-1 hover:shadow-glow">
+              <a
+                key={loc.slug}
+                href={loc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group glass neon-border rounded-2xl p-5 transition-transform hover:-translate-y-1 hover:shadow-glow block cursor-pointer"
+              >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-primary shadow-glow">
