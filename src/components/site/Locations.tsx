@@ -36,7 +36,13 @@ export function Locations() {
           {locations.map((loc) => {
             const online = loc.status === "online";
             return (
-              <div key={loc.slug} className="group glass neon-border rounded-2xl p-5 transition-transform hover:-translate-y-1 hover:shadow-glow">
+              <a
+                key={loc.slug}
+                href={loc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group glass neon-border rounded-2xl p-5 transition-transform hover:-translate-y-1 hover:shadow-glow block cursor-pointer"
+              >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-2">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-primary shadow-glow">
@@ -78,18 +84,13 @@ export function Locations() {
                   </div>
                 </div>
 
-                <a
-                  href={loc.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 flex items-center justify-between rounded-lg bg-secondary/40 border border-glass-border px-3 py-2 hover:bg-secondary/60 transition-colors"
-                >
+                <div className="mt-4 flex items-center justify-between rounded-lg bg-secondary/40 border border-glass-border px-3 py-2 group-hover:bg-secondary/60 transition-colors">
                   <code className="text-[11px] text-muted-foreground truncate">{loc.url}</code>
                   <span className="text-[11px] text-accent inline-flex items-center gap-1 shrink-0 ml-2">
                     <MapPin className="h-3.5 w-3.5" /> Hotspot
                   </span>
-                </a>
-              </div>
+                </div>
+              </a>
             );
           })}
         </div>
