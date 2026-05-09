@@ -41,19 +41,19 @@ export function Locations() {
                 href={loc.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group glass neon-border rounded-2xl p-5 transition-transform hover:-translate-y-1 hover:shadow-glow block cursor-pointer"
+                className="group glass neon-border rounded-2xl p-4 sm:p-5 transition-transform hover:-translate-y-1 hover:shadow-glow block cursor-pointer overflow-hidden"
               >
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-primary shadow-glow">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-primary shadow-glow">
                       <Wifi className="h-5 w-5 text-primary-foreground" />
                     </div>
-                    <div>
-                      <div className="text-[11px] uppercase tracking-widest text-muted-foreground">JOMENS WIFI</div>
-                      <div className="font-semibold">{loc.name}</div>
+                    <div className="min-w-0">
+                      <div className="text-[11px] uppercase tracking-widest text-muted-foreground truncate">JOMENS WIFI</div>
+                      <div className="font-semibold truncate">{loc.name}</div>
                     </div>
                   </div>
-                  <span className={`text-[11px] font-semibold rounded-full px-2 py-1 ${online ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive"}`}>
+                  <span className={`text-[10px] font-semibold rounded-full px-2 py-1 shrink-0 ${online ? "bg-success/15 text-success" : "bg-destructive/15 text-destructive"}`}>
                     {online ? "● Online" : "● Offline"}
                   </span>
                 </div>
