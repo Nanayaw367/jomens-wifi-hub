@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Wifi, MapPin, Ticket, LayoutGrid, Menu } from "lucide-react";
+import { Wifi, MapPin, HelpCircle, Phone, Menu } from "lucide-react";
 import { useState } from "react";
 
 const links = [
   { href: "#locations", label: "Locations" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#voucher", label: "Voucher" },
+  { href: "#how", label: "How it works" },
   { href: "#faq", label: "FAQ" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
