@@ -4,8 +4,8 @@ const HOTSPOT_URL = "https://kostechcampuswifi.sopraent.com/hotspot";
 
 const locations = [
   { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5, url: HOTSPOT_URL },
-  { name: "ASUOGYA", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4, url: HOTSPOT_URL },
-  { name: "MARKET STATION", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4, url: HOTSPOT_URL },
+  { name: "Asuogya Junction", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4, url: HOTSPOT_URL },
+  { name: "Market Circle", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4, url: HOTSPOT_URL },
 ];
 
 function Bars({ n }: { n: number }) {
