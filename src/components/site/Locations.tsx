@@ -1,12 +1,11 @@
 import { MapPin, Signal, Wifi, Map } from "lucide-react";
 
+const HOTSPOT_URL = "https://kostechcampuswifi.sopraent.com/hotspot";
+
 const locations = [
-  { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5 },
-  { name: "Asuogya Junction", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4 },
-  { name: "Market Circle", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4 },
-  { name: "Hostel Zone", desc: "Premium speeds in residential blocks", slug: "hostel", status: "online", strength: 5 },
-  { name: "Community Center", desc: "Free signup spots & community access", slug: "community", status: "offline", strength: 2 },
-  { name: "Town Plaza", desc: "Cafes, shops and outdoor seating coverage", slug: "plaza", status: "online", strength: 3 },
+  { name: "KOSTECH Campus", desc: "Full coverage across lecture halls & hostels", slug: "kostech", status: "online", strength: 5, url: HOTSPOT_URL },
+  { name: "Asuogya Junction", desc: "High-traffic stop with wide outdoor coverage", slug: "asuogya", status: "online", strength: 4, url: HOTSPOT_URL },
+  { name: "Market Circle", desc: "Reliable WiFi for traders and shoppers", slug: "market", status: "online", strength: 4, url: HOTSPOT_URL },
 ];
 
 function Bars({ n }: { n: number }) {
