@@ -29,19 +29,13 @@ export function Hero() {
               Fast & Affordable <span className="text-gradient">WiFi Internet</span>
             </h1>
             <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-xl">
-              Connect instantly to reliable hotspot internet at multiple JOMENS WIFI locations.
-              Pay with Mobile Money, get your voucher, and stay online.
+              Reliable hotspot internet at multiple JOMENS WIFI locations across Ghana.
+              Discover the closest spot and stay online.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#portal" className="inline-flex items-center gap-2 rounded-2xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-                Connect Now <ArrowRight className="h-4 w-4" />
-              </a>
-              <a href="#locations" className="inline-flex items-center gap-2 glass rounded-2xl px-5 py-3 text-sm font-semibold text-foreground hover:bg-secondary/60 transition">
+              <a href="#locations" className="inline-flex items-center gap-2 rounded-2xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
                 <MapPin className="h-4 w-4" /> View Locations
-              </a>
-              <a href="#voucher" className="inline-flex items-center gap-2 rounded-2xl bg-gradient-cyan px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow-cyan hover:opacity-90 transition">
-                <Ticket className="h-4 w-4" /> Buy Voucher
               </a>
             </div>
 
