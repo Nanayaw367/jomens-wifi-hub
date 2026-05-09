@@ -51,7 +51,6 @@ export function Hero() {
           </div>
 
           <div className="relative h-[340px] md:h-[460px] flex items-center justify-center animate-fade-up [animation-delay:0.15s]">
-            <WifiPulse />
             {/* orbit cards */}
             <div className="absolute top-6 left-2 glass rounded-2xl px-3 py-2 text-xs animate-float">
               <div className="flex items-center gap-2"><Signal className="h-4 w-4 text-success" /> Signal Excellent</div>
