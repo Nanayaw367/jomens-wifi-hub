@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Ticket, Activity, Users, Signal } from "lucide-react";
+import { MapPin, Activity, Users, Signal } from "lucide-react";
 import { WifiPulse } from "./WifiPulse";
 
 const stats = [
