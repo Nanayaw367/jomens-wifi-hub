@@ -80,13 +80,10 @@ export function Locations() {
                 </div>
 
                 <div className="mt-4 flex items-center justify-between">
-                  <code className="text-[11px] text-muted-foreground truncate">hotspot.jomenswifi.com/{loc.slug}</code>
-                  <a
-                    href={`https://hotspot.jomenswifi.com/${loc.slug}`}
-                    className="inline-flex items-center gap-1 rounded-xl bg-gradient-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-glow hover:opacity-90"
-                  >
-                    Connect <ArrowRight className="h-3.5 w-3.5" />
-                  </a>
+                  <code className="text-[11px] text-muted-foreground truncate">{loc.name}</code>
+                  <span className="text-[11px] text-muted-foreground inline-flex items-center gap-1">
+                    <MapPin className="h-3.5 w-3.5" /> Hotspot
+                  </span>
                 </div>
               </div>
             );
