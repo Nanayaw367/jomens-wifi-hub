@@ -57,8 +57,8 @@ export function SiteHeader() {
 const bottomNav = [
   { href: "#hero", label: "Home", Icon: Wifi },
   { href: "#locations", label: "Spots", Icon: MapPin },
-  { href: "#voucher", label: "Buy", Icon: Ticket },
-  { href: "#portal", label: "Portal", Icon: LayoutGrid },
+  { href: "#faq", label: "FAQ", Icon: HelpCircle },
+  { href: "#contact", label: "Contact", Icon: Phone },
 ];
 
 export function MobileBottomNav() {
