@@ -49,12 +49,6 @@ export function Hero() {
             <div className="absolute top-6 left-2 glass rounded-2xl px-3 py-2 text-xs animate-float">
               <div className="flex items-center gap-2"><Signal className="h-4 w-4 text-success" /> Signal Excellent</div>
             </div>
-            <div className="absolute bottom-8 right-2 glass rounded-2xl px-3 py-2 text-xs animate-float [animation-delay:1s]">
-              <div className="flex items-center gap-2"><Activity className="h-4 w-4 text-accent" /> 42 Mbps</div>
-            </div>
-            <div className="absolute top-1/2 right-0 glass rounded-2xl px-3 py-2 text-xs animate-float [animation-delay:2s]">
-              <div className="flex items-center gap-2"><Users className="h-4 w-4 text-violet" /> 286 online</div>
-            </div>
           </div>
         </div>
       </div>
