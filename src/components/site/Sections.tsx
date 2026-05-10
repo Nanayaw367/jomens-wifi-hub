@@ -114,10 +114,10 @@ export function Contact() {
           <p className="mt-3 text-muted-foreground">Need help connecting or buying a voucher? We're a message away.</p>
 
           <div className="mt-6 grid gap-3">
-            <a href="https://wa.me/233000000000" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
+            <a href="https://wa.me/233559857728" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
               <MessageCircle className="h-5 w-5 text-success" /> Chat on WhatsApp
             </a>
-            <a href="tel:+233000000000" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
+            <a href="tel:+233559857728" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
               <Phone className="h-5 w-5 text-accent" /> Call support
             </a>
             <a href="mailto:hello@jomenswifi.com" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
