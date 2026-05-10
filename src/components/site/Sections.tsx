@@ -117,7 +117,7 @@ export function Contact() {
             <a href="https://wa.me/233559857728" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
               <MessageCircle className="h-5 w-5 text-success" /> Chat on WhatsApp
             </a>
-            <a href="tel:+233000000000" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
+            <a href="tel:+233559857728" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
               <Phone className="h-5 w-5 text-accent" /> Call support
             </a>
             <a href="mailto:hello@jomenswifi.com" className="glass rounded-2xl px-4 py-3 flex items-center gap-3 hover:bg-secondary/60 transition">
