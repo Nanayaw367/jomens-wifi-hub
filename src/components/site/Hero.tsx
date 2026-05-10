@@ -18,13 +18,6 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-4 pt-10 pb-16 md:pt-20 md:pb-24">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="animate-fade-up">
-            <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 text-xs text-muted-foreground">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-success opacity-75 animate-ping" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
-              </span>
-              Network online across Ghana
-            </div>
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
               Fast & Affordable <span className="text-gradient">WiFi Internet</span>
             </h1>
